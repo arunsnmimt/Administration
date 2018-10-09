@@ -1,0 +1,6 @@
+If you are using windows do the following:
+1.          Open up a command prompt (CMD.exe) 
+2.          Type nslookup and hit enter 
+3.          Type set type=MX and hit enter 
+4.          Type the domain name and hit enter, for example: google.com 
+5.           The results will be a list of host names that are set up for SMTP  

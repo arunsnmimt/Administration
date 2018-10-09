@@ -1,0 +1,15 @@
+BACKUP DATABASE master TO DISK = 'D:\MSSQL\Backups\SQL-02 (Copy Only)\master.bak' WITH COPY_ONLY, INIT, COMPRESSION
+BACKUP DATABASE msdb TO DISK = 'D:\MSSQL\Backups\SQL-02 (Copy Only)\msdb.bak' WITH COPY_ONLY, INIT, COMPRESSION
+BACKUP DATABASE model TO DISK = 'D:\MSSQL\Backups\SQL-02 (Copy Only)\model.bak' WITH COPY_ONLY, INIT, COMPRESSION
+BACKUP DATABASE distribution TO DISK = 'D:\MSSQL\Backups\SQL-02 (Copy Only)\distribution.bak' WITH COPY_ONLY, INIT, COMPRESSION
+BACKUP DATABASE ReportServer TO DISK = 'D:\MSSQL\Backups\SQL-02 (Copy Only)\ReportServer.bak' WITH COPY_ONLY, INIT, COMPRESSION
+BACKUP DATABASE Audit TO DISK = 'D:\MSSQL\Backups\SQL-02 (Copy Only)\Audit.bak' WITH COPY_ONLY, INIT, COMPRESSION
+--BACKUP DATABASE Courses_Online TO DISK = 'D:\MSSQL\Backups\SQL-02 (Copy Only)\Courses_Online.bak' WITH COPY_ONLY, INIT, COMPRESSION
+--BACKUP DATABASE ILRAnalyser TO DISK = 'D:\MSSQL\Backups\SQL-02 (Copy Only)\ILRAnalyser.bak' WITH COPY_ONLY, INIT, COMPRESSION 
+--BACKUP DATABASE ILRAnalyserNew3 TO DISK = 'D:\MSSQL\Backups\SQL-02 (Copy Only)\ILRAnalyserNew3.bak' WITH COPY_ONLY, INIT, COMPRESSION 
+--BACKUP DATABASE OnlineEnquiriesArchive TO DISK = 'D:\MSSQL\Backups\SQL-02 (Copy Only)\OnlineEnquiriesArchive.bak' WITH COPY_ONLY, INIT, COMPRESSION
+--BACKUP DATABASE Performance_Data_Warehouse TO DISK = 'D:\MSSQL\Backups\SQL-02 (Copy Only)\Performance_Data_Warehouse.bak' WITH COPY_ONLY, INIT, COMPRESSION 
+--BACKUP DATABASE Processed_Data TO DISK = 'D:\MSSQL\Backups\SQL-02 (Copy Only)\Processed_Data.bak' WITH COPY_ONLY, INIT, COMPRESSION 
+--BACKUP DATABASE ProAchieve TO DISK = 'D:\MSSQL\Backups\SQL-02 (Copy Only)\ProAchieve.bak' WITH COPY_ONLY, INIT, COMPRESSION 
+--BACKUP DATABASE ProAchieveNew TO DISK = 'D:\MSSQL\Backups\SQL-02 (Copy Only)\ProAchieveNew.bak' WITH COPY_ONLY, INIT, COMPRESSION 
+--BACKUP DATABASE RecruitmentArchive TO DISK = 'D:\MSSQL\Backups\SQL-02 (Copy Only)\RecruitmentArchive.bak' WITH COPY_ONLY, INIT, COMPRESSION 

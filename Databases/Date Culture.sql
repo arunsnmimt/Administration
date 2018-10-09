@@ -1,0 +1,14 @@
+-- ISO
+DECLARE @date AS DATETIME
+SET @date = '2012-09-15 14:53:30'
+SELECT @date
+
+-- UK
+DECLARE @date AS DATETIME
+SET @date = '15/09/2012 14:53:30'
+SELECT @date
+
+-- US
+DECLARE @date AS DATETIME
+SET @date = '09/15/2012 14:53:30'
+SELECT @date

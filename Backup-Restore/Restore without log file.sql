@@ -1,0 +1,8 @@
+DECLARE @script VARCHAR(MAX);
+SELECT TOP 1 @script = 'ALTER DATABASE [' + [name] + '] SET EMERGENCY;' + CHAR(13)
+		+ 'ALTER DATABASE [' + [name] + '] SET SINGLE_USER;' + CHAR(13)
+		+ 'DBCC CHECKDB (N''' + [name] + ''',REPAIR_ALLOW_DATA_LOSS) WITH ALL_ERRORMSGS, NO_INFOMSGS;' + CHAR(13)
+		+ 'ALTER DATABASE [' + [name] + '] SET MULTI_USER;' + CHAR(13)
+FROM sys.databases
+WHERE state_desc = 'RECOVERY_PENDING';
+PRINT @script;

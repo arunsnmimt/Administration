@@ -1,0 +1,43 @@
+-- =============================================================================
+-- SQL Server Reporting Services Report Project
+-- =============================================================================
+-- 
+-- Author:            Bret Stateham
+-- Email:             bret@netconnex.com
+-- Blog:              blogs.netconnex.com
+-- Twitter:           @BStateham
+-- Codeplex Project:  http://ssrscatalogqueries.codeplex.com/
+-- -----------------------------------------------------------------------------
+-- Connection Management
+-- -----------------------------------------------------------------------------
+-- I have purposely deleted my connection object from the "Connections" folder
+-- as you open each .SQL file for the first time, you will be prompted to 
+-- connect to the server.  Make sure to specify the SQL Server Instance where
+-- you wish to run these scripts.
+--
+-- -----------------------------------------------------------------------------
+-- ReportServer Database Name....
+-- -----------------------------------------------------------------------------
+-- The scripts & queries in this project assume that the reporting services 
+-- database is on the same instance as that on which the scripts are executed
+-- and that the datbase is named [ReportServer]
+--
+-- If your database is not on the same instance that you want to run the scripts
+-- from, you might look into created a Linked Server to connect you to the 
+-- desired instance.
+--
+-- Also, if the database is not named ReportServer (common when named instances
+-- of SSRS are in use), then you will need to modify the scripts to use the 
+-- proper datbase name.
+--
+-- -----------------------------------------------------------------------------
+-- !!! Disclaimer !!!
+-- -----------------------------------------------------------------------------
+-- The queries and techniques demonstrated in this project are for exploratory
+-- and demonstration purposes only.  I make no guarantees as to their
+-- suitability in any situation, and leave the reader to their own judgement
+-- regarding the use of these queries.
+--
+-- Microsoft does not support queries directly against the ReportServer database
+-- and you should instead investigate the use of the supported Web Services
+-- for investigating and maniupulating your reporting services instances.  

@@ -1,0 +1,1 @@
+EXEC msdb.dbo.sp_send_dbmail @profile_name  = 'Microlise', @recipients = 'michael.giles@microlise.com', @body = 'Shrink Finished',@Subject = 'Shrink Finished'

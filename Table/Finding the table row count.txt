@@ -1,0 +1,5 @@
+
+Select A.name 'TableName', B.rowcnt 'RowCount' 
+from sysobjects A, sysindexes B   
+where A.id =B.id and A.type = 'u' and  indid <2 and a.name='TRASentMessages_Scot_temp'
+order by a.name 

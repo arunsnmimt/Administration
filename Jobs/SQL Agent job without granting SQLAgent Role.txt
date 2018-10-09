@@ -1,0 +1,29 @@
+Grant permission to  an end user to execute SQL Agent job without granting SQLAgent Role  - A workaround
+
+Steps
+msdb
+-	Create the below sp in msdb as 
+Create procedure <sp_sqlagentjobname> 
+with execute as owner as
+exec msdb.sp_start_job @job_name = ‘sqlagentjobname’
+
+-	Grant execute on sp_sqlagentjobname to <user> 
+-	Grant public access to user in msdb
+
+Userdb 
+-	Create synonym sp_sqlagentjobname  for msdb.dbo. sqlagentjobname
+
+
+Sample used for BOB 
+===============================================================================================
+--MSDB
+create procedure sp_POINTTransactionExtract_SQL_JOB
+with execute as owner
+as
+exec sp_start_job @job_name = 'POINTTransactionExtract_SQL_JOB'
+
+grant execute on dbo.sp_POINTTransactionExtract_SQL_JOB to [IM\AJhawar]
+
+--sylvantrans DB
+
+create synonym sp_POINTTransactionExtract_SQL_JOB for msdb.dbo.sp_POINTTransactionExtract_SQL_JOB

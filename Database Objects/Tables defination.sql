@@ -1,0 +1,1 @@
+EXEC sp_describe_first_result_set N'SELECT * FROM Sales.Customers;';

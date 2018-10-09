@@ -1,0 +1,7 @@
+--SQL Command to list file details when a database is corrupt:
+
+--MDF Files
+select a.name, b.name as 'Logical filename', b.filename from sysdatabases a inner join sysaltfiles b on a.dbid = b.dbid where fileid = 1
+
+--LOG Files
+select a.name, b.name as 'Logical filename', b.filename from sysdatabases a inner join sysaltfiles b on a.dbid = b.dbid where fileid = 2
